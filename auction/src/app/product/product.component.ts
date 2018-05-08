@@ -22,7 +22,6 @@ export class ProductComponent implements OnInit {
       new Product(6, "第六个商品", 6.99, 3.5, "这是第六个商品,是我在学习Angular入门实战时创建的", ["电子产品", "硬件设备"])
     ]
   }
-
 }
 
 export class Product {
