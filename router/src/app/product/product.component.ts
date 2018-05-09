@@ -13,7 +13,7 @@ export class ProductComponent implements OnInit {
   constructor(private routeInfo:ActivatedRoute) { }
 
   ngOnInit() {
-    this.productId = this.routeInfo.snapshot.queryParams["id"];
+    this.productId = this.routeInfo.snapshot.params["id"];
   }
 
 }
