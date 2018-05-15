@@ -10,7 +10,7 @@ export class ProductComponent implements OnInit {
 
   private productId: number;
 
-  private productName: String;
+  private productName: string;
 
   constructor(private routeInfo: ActivatedRoute) {
   }
@@ -28,7 +28,7 @@ export class ProductComponent implements OnInit {
 }
 
 export class Product {
-  constructor(public id: number, public name: String) {
+  constructor(public id: number, public name: string) {
 
   }
 }
