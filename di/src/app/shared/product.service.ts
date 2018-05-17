@@ -4,11 +4,11 @@ import {LoggerService} from "./logger.service";
 @Injectable()
 export class ProductService {
 
-  constructor(private logger: LoggerService) {
+  constructor(public logger: LoggerService) {
   }
 
   getProduct(): Product {
-    this.logger.log("getProduct()方法被调用");
+    this.logger.log("ProductService.getProduct()方法被调用");
     return new Product(0, "iPhoneX", 6899, "最新款苹果手机");
   }
 }
