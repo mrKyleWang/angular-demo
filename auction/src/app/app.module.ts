@@ -15,7 +15,7 @@ import {ProductService} from "./shared/product.service";
 
 const routeConfig: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'product/:productTitle', component: ProductDetailComponent}
+  {path: 'product/:productId', component: ProductDetailComponent}
 ]
 
 @NgModule({
