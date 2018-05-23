@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-bind',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BindComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
+  doOnClick(event: any) {
+    console.log(event);
+  }
 }
