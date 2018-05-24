@@ -18,4 +18,9 @@ export class BindComponent implements OnInit {
   doOnClick(event: any) {
     console.log(event);
   }
+
+  doOnInput(event: any) {
+    console.log(event.target.value);
+    console.log(event.target.getAttribute('value'));
+  }
 }
