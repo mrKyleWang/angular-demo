@@ -3,5 +3,17 @@
 </p>
 <button (click)="doOnClick($event)">点击</button><br/>
 <input value="Tom" (input)="doOnInput($event)"/><br/>
-<img [src]="imgUrl"/><br/>
-<img src={{imgUrl}}/>
+<img [src]="imgUrl"/>&nbsp;<img src={{imgUrl}}/>
+
+<table>
+  <tr>
+    <td [attr.colspan]="size">KyleWang</td>
+  </tr>
+</table>
+
+<div class="a b c">Angular学习</div>
+<div [class]="divClassStr">Angular学习</div>
+<div class="a b" [class.c]="isBig">Angular学习</div>
+<div [ngClass]="divClass">Angular学习</div>
+<div [style.color]="isDev?'red':'blue'">Angular学习</div>
+<div [ngStyle]="divStyle">Angular学习</div>
