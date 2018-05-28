@@ -17,3 +17,8 @@
 <div [ngClass]="divClass">Angular学习</div>
 <div [style.color]="isDev?'red':'blue'">Angular学习</div>
 <div [ngStyle]="divStyle">Angular学习</div>
+
+<!-- 双向绑定 -->
+<input [value]="name" (input)="doOnInput($event)"/>
+ <input [(ngModel)]="name"/> 
+{{name}}

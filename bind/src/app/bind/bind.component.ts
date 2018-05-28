@@ -28,6 +28,8 @@ export class BindComponent implements OnInit {
     background: 'yellow'
   }
 
+  name:string;
+
   constructor() {
     setTimeout(() => {
       this.divClassStr = "a b c";
@@ -42,6 +44,7 @@ export class BindComponent implements OnInit {
         color: 'yellow',
         background: 'red'
       }
+      this.name="Tom";
     }, 2000)
   }
 
