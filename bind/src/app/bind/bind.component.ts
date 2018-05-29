@@ -45,7 +45,7 @@ export class BindComponent implements OnInit {
         background: 'red'
       }
       this.name="Tom";
-    }, 2000)
+    }, 3000)
   }
 
   ngOnInit() {
