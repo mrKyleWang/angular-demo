@@ -30,6 +30,9 @@ export class BindComponent implements OnInit {
 
   name:string;
 
+  birthday:Date = new Date();
+  uppercase:string = 'UPPER';
+
   constructor() {
     setTimeout(() => {
       this.divClassStr = "a b c";
