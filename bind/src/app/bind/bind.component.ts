@@ -32,6 +32,7 @@ export class BindComponent implements OnInit {
 
   birthday:Date = new Date();
   uppercase:string = 'UPPER';
+  pi:number = 3.1415926;
 
   constructor() {
     setTimeout(() => {
