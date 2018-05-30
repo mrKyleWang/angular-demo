@@ -5,8 +5,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class MultiplePipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    return null;
+  transform(value: number, args?: number): any {
+    if(!args){
+      return 1;
+    }
+    return value * args;
   }
 
 }
